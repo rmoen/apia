@@ -74,6 +74,6 @@ Wladimir J. van der Laan (2):
 
 kozyilmaz (3):
       [macOS] system linker does not support “--version” option but only “-v”
-      option to disable building libraries (zcutil/build.sh)
+      option to disable building libraries (util/build.sh)
       support per platform filename and hash setting for dependencies
 
