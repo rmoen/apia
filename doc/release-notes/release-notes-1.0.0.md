@@ -1,6 +1,6 @@
 Jack Grigg (8):
-      Rework zcutil/build-debian-package.sh to place files correctly
-      Add lintian check to zcutil/build-debian-package.sh
+      Rework util/build-debian-package.sh to place files correctly
+      Add lintian check to util/build-debian-package.sh
       Fix DEBIAN/control errors raised by lintian
       Build libsnark with -march=x86-64 instead of -march=native
       Disable the metrics screen on regtest

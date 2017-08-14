@@ -13,7 +13,7 @@ Jack Grigg (22):
       Trigger metrics UI refresh on new messages
       Strip out the SECURE flag in metrics UI so message style is detected
       Handle newlines in UI messages
-      Suggest ./zcutil/fetch-params.sh as well
+      Suggest ./util/fetch-params.sh as well
       Update debug categories
       Rename build-aux/m4/bitcoin_find_bdb48.m4 to remove version
       Throw an error if zcash.conf is missing

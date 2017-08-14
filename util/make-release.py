@@ -178,7 +178,7 @@ def patch_release_height(releaseheight):
 @phase('Building...')
 def build():
     nproc = sh_out('nproc').strip()
-    sh_log('./zcutil/build.sh', '-j', nproc)
+    sh_log('./util/build.sh', '-j', nproc)
 
 
 @phase('Generating manpages.')
@@ -188,7 +188,7 @@ def gen_manpages():
 
 @phase('Generating release notes.')
 def gen_release_notes(release):
-    sh_log('python', './zcutil/release-notes.py', '--version', release.novtext)
+    sh_log('python', './util/release-notes.py', '--version', release.novtext)
     sh_log(
         'git',
         'add',

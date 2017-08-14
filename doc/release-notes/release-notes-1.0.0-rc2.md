@@ -24,7 +24,7 @@ Daira Hopwood (22):
 
 David Mercer (4):
       explicitly pass HOST and BUILD to ./configure
-      allow both HOST and BUILD to be passed in from the zcutil/build.sh
+      allow both HOST and BUILD to be passed in from the util/build.sh
       pass in both HOST and BUILD to depends system, needed for deterministic builds
       explicitly pass HOST and BUILD to libgmp ./configure
 

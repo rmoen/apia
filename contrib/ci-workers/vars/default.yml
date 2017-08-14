@@ -8,7 +8,7 @@ buildbot_deps:
 # Dependencies required to download files
 fetch_deps:
   - git
-  - wget # For zcutil/fetch-params.sh
+  - wget # For util/fetch-params.sh
 
 # Dependencies required to configure Zcash
 conf_deps:

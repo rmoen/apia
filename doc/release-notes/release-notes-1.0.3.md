@@ -1,5 +1,5 @@
 Jack Grigg (5):
-      Add --disable-tests flag to zcutils/build.sh
+      Add --disable-tests flag to utils/build.sh
       Correctly set CNoteData::witnessHeight when decrementing witness caches
       Copy over CNoteData::witnessHeight when updating wallet tx
       Add code comments about CNoteData::witnessHeight
