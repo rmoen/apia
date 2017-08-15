@@ -130,10 +130,11 @@ public:
 
         checkpointData = (Checkpoints::CCheckpointData) {
             boost::assign::map_list_of
-            ( 0, consensus.hashGenesisBlock),
-            genesis.nTime,
-            0,
-            0
+            ( 0, consensus.hashGenesisBlock)
+						(8, uint256S("0005fc82a802e8d62d892398825e39c22945ace62e4fb553bd1b58449ee45f61")),
+            1502773862,
+            8,
+            20 
         };
 
         // Founders reward script expects a vector of 2-of-3 multisig addresses

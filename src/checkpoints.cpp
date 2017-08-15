@@ -76,7 +76,7 @@ namespace Checkpoints {
             BlockMap::const_iterator t = mapBlockIndex.find(hash);
             if (t != mapBlockIndex.end())
                 return t->second;
-		//blockhack
+				  //blockhack
         	//return NULL;
         }
         return NULL;
