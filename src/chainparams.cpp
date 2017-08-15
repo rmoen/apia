@@ -39,7 +39,7 @@ public:
         strCurrencyUnits = "APIA";
         consensus.fCoinbaseMustBeProtected = true;
         //consensus.nSubsidySlowStartInterval = 20000;
-        consensus.nSubsidySlowStartInterval = 20000;
+        consensus.nSubsidySlowStartInterval = 1;
         consensus.nSubsidyHalvingInterval = 840000;
         consensus.nMajorityEnforceBlockUpgrade = 750;
         consensus.nMajorityRejectBlockOutdated = 950;
