@@ -119,10 +119,8 @@ int EstimateNetHeightInner(int height, int64_t tipmediantime,
             (double (timeLastCheckpoint - genesisTime)) / heightLastCheckpoint;
     double averageSpacing = (targetSpacing + checkpointSpacing) / 2;
     int netheight = medianHeight + ((GetTime() - tipmediantime) / averageSpacing);
-   // Round to nearest ten to reduce noise
-   // blockhack
-   // return 1
-   return ((netheight + 5) / 10) * 10;
+    // Round to nearest ten to reduce noise
+    return ((netheight + 5) / 10) * 10;
 }
 
 int EstimateNetHeight(int height, int64_t tipmediantime, CChainParams chainParams)
@@ -431,12 +429,9 @@ void ThreadShowMetricsScreen()
         std::cout << std::endl;
 
         // Thank you text
-        std::cout << ("Thank you for running an Apia node!") << std::endl;
-        std::cout << ("You're just... ") << std::endl;
-	std::cout << ("╔══╗───────────────╔╦╦╗") << std::endl;
-	std::cout << ("║╔╗╠╦╦╦═╗╔═╦═╦══╦═╗║║║║") << std::endl;
-	std::cout << ("║╠╣║║║║╚╬╣╠╣╬║║║║╩╣╠╬╬╣") << std::endl;
-	std::cout << ("╚╝╚╩══╩═╩═╝╚═╩╩╩╩═╝╚╩╩╝") << std::endl;
+        std::cout << _("Thank you for running a Zcash node!") << std::endl;
+        std::cout << _("You're helping to strengthen the network and contributing to a social good :)") << std::endl;
+
         // Privacy notice text
         std::cout << PrivacyInfo();
         std::cout << std::endl;
