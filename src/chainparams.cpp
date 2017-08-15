@@ -130,10 +130,11 @@ public:
 
         checkpointData = (Checkpoints::CCheckpointData) {
             boost::assign::map_list_of
-            ( 0, consensus.hashGenesisBlock)
-						(11, uint256S("000187e0361de1f7b905003ee5772ad5b8203cc7e6dbb2799f60d7725e56ea93")),
-            1502786987,
-            10,
+            ( 0, consensus.hashGenesisBlock),
+						//(11, uint256S("000187e0361de1f7b905003ee5772ad5b8203cc7e6dbb2799f60d7725e56ea93")),
+						1502383005,
+            // time of last CP 1502786987,
+            0, // number of txns since last CP
             100 
         };
 
@@ -141,7 +142,7 @@ public:
         vFoundersRewardAddress = {
             "t3hLJHrHs3ytDgExxr1mD8DYSrk1TowGV25", /* main-index: 51*/
             "t3fmYHU2DnVaQgPhDs6TMFVmyC3qbWEWgXN"  /* main-index: 52*/
-	};
+				};
         assert(vFoundersRewardAddress.size() <= consensus.GetLastFoundersRewardBlockHeight());
     }
 };
