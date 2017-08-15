@@ -38,6 +38,7 @@ public:
         strNetworkID = "main";
         strCurrencyUnits = "APIA";
         consensus.fCoinbaseMustBeProtected = true;
+        //consensus.nSubsidySlowStartInterval = 20000;
         consensus.nSubsidySlowStartInterval = 20000;
         consensus.nSubsidyHalvingInterval = 840000;
         consensus.nMajorityEnforceBlockUpgrade = 750;
@@ -100,8 +101,8 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        vSeeds.push_back(CDNSSeedData("node1", "52.191.161.211")); 
-        vSeeds.push_back(CDNSSeedData("node2", "158.69.252.111")); 
+        //vSeeds.push_back(CDNSSeedData("node1", "52.191.161.211")); 
+        //vSeeds.push_back(CDNSSeedData("node2", "158.69.252.111")); 
 
         // guarantees the first 2 characters, when base58 encoded, are "t1"
         base58Prefixes[PUBKEY_ADDRESS]     = {0x1C,0xB8};
@@ -135,11 +136,9 @@ public:
 
         // Founders reward script expects a vector of 2-of-3 multisig addresses
         vFoundersRewardAddress = {
-//            "t3hLJHrHs3ytDgExxr1mD8DYSrk1TowGV25", /* main-index: 51*/
-//            "t3fmYHU2DnVaQgPhDs6TMFVmyC3qbWEWgXN", /* main-index: 52*/
-//            "t3T4WmAp6nrLkJ24iPpGeCe1fSWTPv47ASG", /* main-index: 53*/
-//            "t3fP6GrDM4QVwdjFhmCxGNbe7jXXXSDQ5dv", /* main-index: 54*/
-};
+            "t3hLJHrHs3ytDgExxr1mD8DYSrk1TowGV25", /* main-index: 51*/
+            "t3fmYHU2DnVaQgPhDs6TMFVmyC3qbWEWgXN"  /* main-index: 52*/
+	};
         assert(vFoundersRewardAddress.size() <= consensus.GetLastFoundersRewardBlockHeight());
     }
 };
@@ -209,8 +208,7 @@ public:
             0
         };
         // Founders reward script expects a vector of 2-of-3 multisig addresses
-        vFoundersRewardAddress = {
-            };
+	vFoundersRewardAddress = { "t2FwcEhFdNXuFMv1tcYwaBJtYVtMj8b1uTg" };
         assert(vFoundersRewardAddress.size() <= consensus.GetLastFoundersRewardBlockHeight());
     }
 };

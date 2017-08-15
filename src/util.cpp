@@ -891,7 +891,7 @@ void SetThreadPriority(int nPriority)
 std::string PrivacyInfo()
 {
     return "\n" +
-           FormatParagraph(strprintf(_("In order to ensure you are adequately protecting your privacy when using Apia , please wear a helmet."))) + "\n" ;
+           FormatParagraph(strprintf(_("In order to ensure you are adequately protecting your privacy when using Apia, please wear a helmet."))) + "\n" ;
                                      
 }
 
