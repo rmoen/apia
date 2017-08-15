@@ -102,7 +102,7 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
         vSeeds.push_back(CDNSSeedData("node1", "52.191.161.211")); 
-        vSeeds.push_back(CDNSSeedData("node2", "158.69.252.111")); 
+        //vSeeds.push_back(CDNSSeedData("node2", "158.69.252.111")); 
         vSeeds.push_back(CDNSSeedData("node3", "40.84.227.209")); 
         vSeeds.push_back(CDNSSeedData("masternode", "apia.network")); 
 
