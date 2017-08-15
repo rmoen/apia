@@ -119,9 +119,10 @@ int EstimateNetHeightInner(int height, int64_t tipmediantime,
             (double (timeLastCheckpoint - genesisTime)) / heightLastCheckpoint;
     double averageSpacing = (targetSpacing + checkpointSpacing) / 2;
     int netheight = medianHeight + ((GetTime() - tipmediantime) / averageSpacing);
-    // Round to nearest ten to reduce noise
-    //return ((netheight + 5) / 10) * 10;
-    return 1;
+   // Round to nearest ten to reduce noise
+   // blockhack
+   // return 1
+   return ((netheight + 5) / 10) * 10;
 }
 
 int EstimateNetHeight(int height, int64_t tipmediantime, CChainParams chainParams)
