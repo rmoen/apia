@@ -102,9 +102,9 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
         vSeeds.push_back(CDNSSeedData("node1", "52.191.161.211")); 
-        vSeeds.push_back(CDNSSeedData("node2", "158.69.252.111")); 
+        //vSeeds.push_back(CDNSSeedData("node2", "158.69.252.111")); 
         vSeeds.push_back(CDNSSeedData("node3", "40.84.227.209")); 
-        vSeeds.push_back(CDNSSeedData("masternode", "apia.network")); 
+        //vSeeds.push_back(CDNSSeedData("masternode", "apia.network")); 
 
         // guarantees the first 2 characters, when base58 encoded, are "t1"
         base58Prefixes[PUBKEY_ADDRESS]     = {0x1C,0xB8};
@@ -130,10 +130,11 @@ public:
 
         checkpointData = (Checkpoints::CCheckpointData) {
             boost::assign::map_list_of
-            ( 0, consensus.hashGenesisBlock),
-            genesis.nTime,
-            0,
-            0
+            ( 0, consensus.hashGenesisBlock)
+						(8, uint256S("0005fc82a802e8d62d892398825e39c22945ace62e4fb553bd1b58449ee45f61")),
+            1502773862,
+            8,
+            20 
         };
 
         // Founders reward script expects a vector of 2-of-3 multisig addresses
