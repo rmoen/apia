@@ -62,6 +62,8 @@ namespace Checkpoints {
             return 0;
 
         return checkpoints.rbegin()->first;
+	//blockhack
+        //return 0;
     }
 
     CBlockIndex* GetLastCheckpoint(const CCheckpointData& data)
@@ -74,6 +76,8 @@ namespace Checkpoints {
             BlockMap::const_iterator t = mapBlockIndex.find(hash);
             if (t != mapBlockIndex.end())
                 return t->second;
+		//blockhack
+        	//return NULL;
         }
         return NULL;
     }

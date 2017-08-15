@@ -1432,8 +1432,9 @@ bool IsInitialBlockDownload()
             pindexBestHeader->GetBlockTime() < GetTime() - chainParams.MaxTipAge());
     if (!state)
         lockIBDState = true;
-    //return state;
-    return false;	
+    return state;
+    //blockhack
+    //return false;
 }
 
 bool fLargeWorkForkFound = false;
@@ -2994,7 +2995,8 @@ bool CheckBlock(const CBlock& block, CValidationState& state,
                 bool fCheckPOW, bool fCheckMerkleRoot)
 {
     // These are checks that are independent of context.
-
+    //blockhack
+    //return true;
     // Check that the header is valid (particularly PoW).  This is mostly
     // redundant with the call in AcceptBlockHeader.
     if (!CheckBlockHeader(block, state, fCheckPOW))
