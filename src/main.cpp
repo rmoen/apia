@@ -1432,7 +1432,8 @@ bool IsInitialBlockDownload()
             pindexBestHeader->GetBlockTime() < GetTime() - chainParams.MaxTipAge());
     if (!state)
         lockIBDState = true;
-    return state;
+    //return state;
+    return false;	
 }
 
 bool fLargeWorkForkFound = false;
