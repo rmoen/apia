@@ -429,9 +429,12 @@ void ThreadShowMetricsScreen()
         std::cout << std::endl;
 
         // Thank you text
-        std::cout << _("Thank you for running a Zcash node!") << std::endl;
-        std::cout << _("You're helping to strengthen the network and contributing to a social good :)") << std::endl;
-
+        std::cout << ("Thank you for running an Apia node!") << std::endl;
+        std::cout << ("You're just... ") << std::endl;
+	std::cout << ("╔══╗───────────────╔╦╦╗") << std::endl;
+	std::cout << ("║╔╗╠╦╦╦═╗╔═╦═╦══╦═╗║║║║") << std::endl;
+	std::cout << ("║╠╣║║║║╚╬╣╠╣╬║║║║╩╣╠╬╬╣") << std::endl;
+	std::cout << ("╚╝╚╩══╩═╩═╝╚═╩╩╩╩═╝╚╩╩╝") << std::endl;
         // Privacy notice text
         std::cout << PrivacyInfo();
         std::cout << std::endl;
