@@ -80,8 +80,19 @@ void ThreadShowMetricsScreen();
  * Zcash: img2txt -W 40 -H 20 -f utf8 -d none -g 0.7 Z-yellow.orange-logo.png
  * Heart: img2txt -W 40 -H 20 -f utf8 -d none 2000px-Heart_corazón.svg.png
  */
-const std::string METRICS_ART =
-"              [0;34;40m            [0m                                                      \n"
-"          [0;34;40m                    [0m                                                  \n"
-"         [0;34;40m                      [0m                                                 \n"
-"              [0;34;40m             [0m                                                     ";
+//the following are UBUNTU/LINUX ONLY terminal color codes.
+const std::string RED = "\033[31m";
+const std::string BLUE = "\033[1m\033[34m";
+const std::string GREEN = "\033[1m\033[32m";
+const std::string CYAN = "\033[1m\033[36m";
+const std::string YELLOW = "\033[1m\033[33m";
+const std::string WHITE = "\033[1m\033[37m";
+
+const std::string METRICS_ART = ""
++ CYAN + "  █████╗ "  + BLUE + " ██████╗ " + RED + " ██╗" + GREEN + "  █████╗  \n"
++ CYAN + " ██╔══██╗"  + BLUE + " ██╔══██╗" + RED + " ██║" + GREEN + " ██╔══██╗ \n"
++ CYAN + " ███████║"  + BLUE + " ██████╔╝" + RED + " ██║" + GREEN + " ███████║ \n"
++ CYAN + " ██╔══██║"  + BLUE + " ██╔═══╝ " + RED + " ██║" + GREEN + " ██╔══██║ \n"
++ CYAN + " ██║  ██║"  + BLUE + " ██║     " + RED + " ██║" + GREEN + " ██║  ██║ \n"
++ CYAN + " ╚═╝  ╚═╝"  + BLUE + " ╚═╝     " + RED + " ╚═╝" + GREEN + " ╚═╝  ╚═╝ \n"
++ YELLOW + "\n";
