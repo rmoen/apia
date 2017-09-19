@@ -436,7 +436,7 @@ std::cout << ("Thank you for running an Apia node!") << std::endl;
 //std::cout << ("╚╝╚╩══╩═╩═╝╚═╩╩╩╩═╝╚╩╩╝") << std::endl;
 
         // Privacy notice text
-        std::cout << PrivacyInfo();
+        // std::cout << PrivacyInfo();
         std::cout << std::endl;
 	std::cout << "\033[1m\033[37m";
     }
