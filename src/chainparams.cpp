@@ -38,8 +38,7 @@ public:
         strNetworkID = "main";
         strCurrencyUnits = "APIA";
         consensus.fCoinbaseMustBeProtected = true;
-        //consensus.nSubsidySlowStartInterval = 20000;
-        consensus.nSubsidySlowStartInterval = 2;
+        consensus.nSubsidySlowStartInterval = 0;
         consensus.nSubsidyHalvingInterval = 840000;
         consensus.nMajorityEnforceBlockUpgrade = 750;
         consensus.nMajorityRejectBlockOutdated = 950;
@@ -59,9 +58,9 @@ public:
         pchMessageStart[3] = 0x64;
         */
         pchMessageStart[0] = 0x52;
-        pchMessageStart[1] = 0x11;
-        pchMessageStart[2] = 0x40;
-        pchMessageStart[3] = 0x1a;
+        pchMessageStart[1] = 0x15;
+        pchMessageStart[2] = 0x13;
+        pchMessageStart[3] = 0x43;
         vAlertPubKey = ParseHex("04b7ecf0baa90495ceb4e4090f6b2fd37eec1e9c85fac68a487f3ce11589692e4a317479316ee814e066638e1db54e37a10689b70286e6315b1087b6615d179264");
         nDefaultPort = 8666;
         nMaxTipAge = 24 * 60 * 60;
@@ -102,9 +101,9 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
         //vSeeds.push_back(CDNSSeedData("masternode", "apia.network")); 
-        vSeeds.push_back(CDNSSeedData("node2", "158.69.252.111")); 
-        vSeeds.push_back(CDNSSeedData("node3", "40.84.227.209")); 
-        vSeeds.push_back(CDNSSeedData("node1", "52.191.161.211")); 
+        //vSeeds.push_back(CDNSSeedData("node2", "158.69.252.111")); 
+        //vSeeds.push_back(CDNSSeedData("node3", "40.84.227.209")); 
+        //vSeeds.push_back(CDNSSeedData("node1", "52.191.161.211")); 
 
         // guarantees the first 2 characters, when base58 encoded, are "t1"
         base58Prefixes[PUBKEY_ADDRESS]     = {0x1C,0xB8};
@@ -131,9 +130,8 @@ public:
         checkpointData = (Checkpoints::CCheckpointData) {
             boost::assign::map_list_of
             ( 0, consensus.hashGenesisBlock),
-						//(11, uint256S("000187e0361de1f7b905003ee5772ad5b8203cc7e6dbb2799f60d7725e56ea93")),
-						1502383005,
-            // time of last CP 1502786987,
+	     //(11, uint256S("000187e0361de1f7b905003ee5772ad5b8203cc7e6dbb2799f60d7725e56ea93")),
+            1502383005, // time of last CP 1502786987,
             0, // number of txns since last CP
             100 
         };
